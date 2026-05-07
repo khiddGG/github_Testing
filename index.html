@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GitHub Push & Pull Tutorial</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="brand-icon">G</div>
+        <div>
+          <h1>Git Sync Guide</h1>
+          <p>Push, Pull, Update, and Commit Workflow</p>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#overview">Overview</a>
+        <a href="#workflow">Workflow</a>
+        <a href="#commands">Commands</a>
+        <a href="#tips">Tips</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="badge">Start Learning with Samael</span>
+          <h2>Learn how to push to GitHub, pull updates, and keep your project synced.</h2>
+          <p>
+            This landing page explains the complete Git workflow in a simple way:
+            add files, commit with comments, pull updates, and push your changes online.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#workflow" class="btn btn-primary">Start Learning</a>
+            <a href="#commands" class="btn btn-secondary">View Commands</a>
+          </div>
+
+          <div class="stats">
+            <div class="stat-card">
+              <strong>Push</strong>
+              <span>Upload changes to GitHub</span>
+            </div>
+            <div class="stat-card">
+              <strong>Pull</strong>
+              <span>Get latest updates</span>
+            </div>
+            <div class="stat-card">
+              <strong>Commit</strong>
+              <span>Save progress with comments</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-panel">
+          <div class="panel-card">
+            <div class="panel-top">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="terminal">
+              <p><span>$</span> git status</p>
+              <p><span>$</span> git add .</p>
+              <p><span>$</span> git commit -m "Update homepage design"</p>
+              <p><span>$</span> git pull origin main</p>
+              <p><span>$</span> git push origin main</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="overview" class="section">
+      <div class="container">
+        <div class="section-title">
+          <span>Overview</span>
+          <h3>What this tutorial teaches</h3>
+        </div>
+
+        <div class="info-grid">
+          <div class="info-card">
+            <h4>Git Add</h4>
+            <p>Stages your modified files so Git knows which changes you want to save.</p>
+          </div>
+          <div class="info-card">
+            <h4>Git Commit</h4>
+            <p>Saves your changes locally with a comment or message explaining what changed.</p>
+          </div>
+          <div class="info-card">
+            <h4>Git Pull</h4>
+            <p>Downloads the latest changes from GitHub to your local machine.</p>
+          </div>
+          <div class="info-card">
+            <h4>Git Push</h4>
+            <p>Uploads your committed changes from your computer to GitHub.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="workflow" class="section section-alt">
+      <div class="container">
+        <div class="section-title">
+          <span>Workflow</span>
+          <h3>Complete Git process for uploading and syncing</h3>
+        </div>
+
+        <div class="workflow-grid">
+          <article class="step-card">
+            <div class="step-number">01</div>
+            <h4>Check your work</h4>
+            <p>Before anything else, check what files were changed.</p>
+            <pre><code>git status</code></pre>
+            <button class="copy-btn" data-copy="git status">Copy Command</button>
+          </article>
+
+          <article class="step-card">
+            <div class="step-number">02</div>
+            <h4>Add files to staging</h4>
+            <p>This prepares all your updated files for commit.</p>
+            <pre><code>git add .</code></pre>
+            <button class="copy-btn" data-copy="git add .">Copy Command</button>
+          </article>
+
+          <article class="step-card">
+            <div class="step-number">03</div>
+            <h4>Commit with a comment</h4>
+            <p>Save your update locally and add a message describing the change.</p>
+            <pre><code>git commit -m "Update: fixed navigation style"</code></pre>
+            <button class="copy-btn" data-copy='git commit -m "Update: fixed navigation style"'>Copy Command</button>
+          </article>
+
+          <article class="step-card">
+            <div class="step-number">04</div>
+            <h4>Pull latest changes</h4>
+            <p>Get the newest version from GitHub before pushing your own changes.</p>
+            <pre><code>git pull origin main</code></pre>
+            <button class="copy-btn" data-copy="git pull origin main">Copy Command</button>
+          </article>
+
+          <article class="step-card">
+            <div class="step-number">05</div>
+            <h4>Push to GitHub</h4>
+            <p>Upload your committed changes to your remote repository.</p>
+            <pre><code>git push origin main</code></pre>
+            <button class="copy-btn" data-copy="git push origin main">Copy Command</button>
+          </article>
+
+          <article class="step-card">
+            <div class="step-number">06</div>
+            <h4>Update and repeat</h4>
+            <p>Edit files, add changes, commit again, then pull and push when needed.</p>
+            <pre><code>git add .
+git commit -m "Update: added new section"
+git pull origin main
+git push origin main</code></pre>
+            <button class="copy-btn" data-copy="git add .
+git commit -m &quot;Update: added new section&quot;
+git pull origin main
+git push origin main">Copy Command</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="commands" class="section">
+      <div class="container">
+        <div class="section-title">
+          <span>Commands</span>
+          <h3>Full command guide</h3>
+        </div>
+
+        <div class="commands-grid">
+          <div class="command-box">
+            <h4>First-time setup</h4>
+            <pre><code>git init
+git remote add origin https://github.com/username/repository.git
+git branch -M main</code></pre>
+            <button class="copy-btn" data-copy="git init
+git remote add origin https://github.com/username/repository.git
+git branch -M main">Copy Commands</button>
+          </div>
+
+          <div class="command-box">
+            <h4>Save your work</h4>
+            <pre><code>git status
+git add .
+git commit -m "Your commit message"</code></pre>
+            <button class="copy-btn" data-copy='git status
+git add .
+git commit -m "Your commit message"'>Copy Commands</button>
+          </div>
+
+          <div class="command-box">
+            <h4>Sync with GitHub</h4>
+            <pre><code>git pull origin main
+git push origin main</code></pre>
+            <button class="copy-btn" data-copy="git pull origin main
+git push origin main">Copy Commands</button>
+          </div>
+
+          <div class="command-box">
+            <h4>Useful extras</h4>
+            <pre><code>git log
+git diff
+git clone https://github.com/username/repository.git</code></pre>
+            <button class="copy-btn" data-copy="git log
+git diff
+git clone https://github.com/username/repository.git">Copy Commands</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tips" class="section section-alt">
+      <div class="container">
+        <div class="section-title">
+          <span>Tips</span>
+          <h3>Instructor notes</h3>
+        </div>
+
+        <div class="tips-grid">
+          <div class="tip-card">
+            <h4>1. Always check first</h4>
+            <p>Use <strong>git status</strong> before committing so you know what changed.</p>
+          </div>
+          <div class="tip-card">
+            <h4>2. Write clear comments</h4>
+            <p>Use meaningful commit messages like <strong>"Update header design"</strong> or <strong>"Fix login bug"</strong>.</p>
+          </div>
+          <div class="tip-card">
+            <h4>3. Pull before pushing</h4>
+            <p>When working with a team, pull the latest changes first to avoid conflicts.</p>
+          </div>
+          <div class="tip-card">
+            <h4>4. Commit often</h4>
+            <p>Smaller commits are easier to track, understand, and troubleshoot.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>GitHub Push & Pull Tutorial Landing Page</p>
+      <small>Built for learning, teaching, and project presentation</small>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast">Copied to clipboard!</div>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
